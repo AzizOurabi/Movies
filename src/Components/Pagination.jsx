@@ -1,12 +1,14 @@
-import React from 'react'
-import ReactPaginate from 'react-paginate'
-const PaginationComponent = ({ getPage ,pageCount}) => {
-    const handlePageClick = (data) =>{
-      console.log(data.selected + 1)
-      getPage(data.selected + 1)
-    }
-  return (
-    <ReactPaginate
+import React from 'react';
+import ReactPaginate from 'react-paginate';
+
+const PaginationComponent = ({ getPage, pageCount }) => {
+    const handlePageClick = (data) => {
+        console.log(data.selected + 1);
+        getPage(data.selected + 1);
+    };
+
+    return (
+        <ReactPaginate
             breakLabel="..."
             nextLabel="Next"
             onPageChange={handlePageClick}
@@ -25,7 +27,7 @@ const PaginationComponent = ({ getPage ,pageCount}) => {
             breakLinkClassName={"page-link"}
             activeClassName={"active"}
         />
-  )
-}
+    );
+};
 
-export default PaginationComponent
+export default PaginationComponent;
