@@ -2,13 +2,12 @@ import React, { useEffect, useState } from 'react';
 import { Row, Col } from 'react-bootstrap';
 import axios from 'axios';
 import { Link, useParams } from "react-router-dom";
-import './MovieDetails.css'; // Importing a CSS file for custom styles
 
 const MovieDetails = () => {
     const param = useParams();
     const [movie, setMovie] = useState({});
 
-    // get movie by details 
+    // Get movie by details 
     const getMovieDetails = async () => {
         const res = await axios.get(`https://api.themoviedb.org/3/movie/${param.id}?api_key=52ef927bbeb21980cd91386a29403c78&language=en`);
         setMovie(res.data);
@@ -52,7 +51,7 @@ const MovieDetails = () => {
                         <div className="text-end p-4">
                             <p className="card-text-title border-bottom responsive-text">Story </p>
                         </div>
-                        <div className="text-end px-2">
+                        <div className="text-center px-2">
                             <p className="card-text-story responsive-text">{movie.overview}</p>
                         </div>
                     </div>
@@ -61,13 +60,13 @@ const MovieDetails = () => {
             <Row className="justify-content-center">
                 <Col md={10} sm={12} className="mt-2 d-flex justify-content-center">
                     <Link to="/">
-                        <button className="btn btn-primary mx-2" style={{ backgroundColor: "#b45b35", border: "none" }}>
+                        <button className="btn btn-action mx-2">
                             Back to home page
                         </button>
                     </Link>
                     {movie.homepage && (
                         <a href={movie.homepage} target="_blank" rel="noopener noreferrer">
-                            <button className="btn btn-primary" style={{ backgroundColor: "#b45b35", border: "none" }}>
+                            <button className="btn btn-action">
                                 Watch the movie
                             </button>
                         </a>
