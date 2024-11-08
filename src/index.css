@@ -201,7 +201,7 @@ body {
 /* Pagination */
 .page-link {
   background-color: var(--color-gold) !important; /* Change page link background color to #d4af37 */
-  color: var(--color-black) !important; /* Change text color to black */
+  color: var(--color-white) !important; /* Change text color to black */
   text-decoration: none; /* Remove underline for links */
 }
 
