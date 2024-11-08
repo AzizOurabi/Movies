@@ -6,7 +6,7 @@ const NavBar = ({search}) => {
     search(word)
   }
   return (
-    <div className="nav-style w-100">
+    <div className="nav-style w-100 sticky-top">
       <Container>
         <Row className="pt-2 ">
           <Col xs="2" lg="1">
