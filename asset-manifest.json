@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/Movies/static/css/main.4a4c0c5d.css",
+    "main.css": "/Movies/static/css/main.24122f57.css",
     "main.js": "/Movies/static/js/main.a7ca3721.js",
     "static/media/logo.png": "/Movies/static/media/logo.800ff118d3628e8c8f7f.png",
     "index.html": "/Movies/index.html",
-    "main.4a4c0c5d.css.map": "/Movies/static/css/main.4a4c0c5d.css.map",
+    "main.24122f57.css.map": "/Movies/static/css/main.24122f57.css.map",
     "main.a7ca3721.js.map": "/Movies/static/js/main.a7ca3721.js.map"
   },
   "entrypoints": [
-    "static/css/main.4a4c0c5d.css",
+    "static/css/main.24122f57.css",
     "static/js/main.a7ca3721.js"
   ]
 }
