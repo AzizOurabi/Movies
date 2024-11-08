@@ -1,7 +1,7 @@
 body {
   margin: 0;
   background-color: black !important; /* Couleur de fond du body */
-  color:#d4af37
+  color: white
 }
 
 .color-body {
@@ -123,7 +123,7 @@ body {
 }
 
 .card-text-story {
-  color: gold; /* Texte en or */
+  color: white; /* Texte en or */
   font-family: Almarai;
   font-size: 18px;
   letter-spacing: 0;
@@ -137,4 +137,55 @@ body {
   font-weight: bold;
   letter-spacing: 0;
   line-height: 49px;
+}
+/* MovieDetails.css */
+
+.responsive-text {
+  font-size: 1rem ;
+  line-height: 1.5;
+  max-width: 700px; /* You can adjust based on your layout */
+  margin: auto; /* Centers the text if there’s extra space */
+}
+
+/* Small devices (mobile phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .responsive-text {
+      font-size: 0.9rem !important /* Smaller font size */
+  }
+}
+
+/* Medium devices (tablets, 576px and up) */
+@media (min-width: 576px) and (max-width: 768px) {
+  .responsive-text {
+      font-size: 1rem; /* Regular font size */
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .responsive-text {
+      font-size: 1.1rem; /* Slightly larger font size */
+  }
+}
+
+.btn-action {
+  background-color: gold !important;
+  border: none;
+  color: black !important;
+  padding: 10px 20px; /* Padding for a better button size */
+  border-radius: 5px; /* Slightly rounded corners */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
+  cursor: pointer; /* Change cursor to pointer */
+}
+
+.btn-action:hover {
+  background-color: darkorange !important;  /* Change background color on hover */
+  color: white !important; /* Change text color on hover */
+}
+
+/* Media queries for button responsiveness if needed */
+@media (max-width: 575.98px) {
+  .btn-action {
+      font-size: 0.8rem; /* Adjust font size on smaller screens */
+  }
 }
